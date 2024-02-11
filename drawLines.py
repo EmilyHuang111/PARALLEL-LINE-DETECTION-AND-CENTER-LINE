@@ -39,6 +39,8 @@ def draw_lines(frame, alpha=0.23):
 
     # Calculate average points for each group and draw lines
     #https://www.oreilly.com/library/view/python-for-data/9781449323592/ch04.html
+    #https://docs.opencv.org/3.4/d9/db0/tutorial_hough_lines.html
+    #https://stackoverflow.com/questions/11492214/opencv-via-python-is-there-a-fast-way-to-zero-pixels-outside-a-set-of-rectangle
     def draw_lines_and_calculate_average(group, frame, color=(0, 255, 0)):
         if not group:
             return None, None
