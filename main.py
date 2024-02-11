@@ -3,7 +3,7 @@ import numpy as np
 from drawLines import draw_lines  # Assuming draw_lines is a function you've defined elsewhere
 
 # Start video capture from the webcam
-##https://docs.opencv.org/4.x/d8/dfe/classcv_1_1VideoCapture.html
+#https://docs.opencv.org/4.x/d8/dfe/classcv_1_1VideoCapture.html
 cap = cv2.VideoCapture(0)  # 1 here denotes the index of the webcam, change it if your webcam has a different index
 
 while True:
