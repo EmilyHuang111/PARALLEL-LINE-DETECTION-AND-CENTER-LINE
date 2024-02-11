@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
-from drawLines import draw_lines  # Assuming draw_lines is a function you've defined elsewhere
+from drawLines import draw_lines  # Import drawLines function
 
 # Start video capture from the webcam
 #https://docs.opencv.org/4.x/d8/dfe/classcv_1_1VideoCapture.html
-cap = cv2.VideoCapture(1)  # 1 here denotes the index of the webcam, change it if your webcam has a different index
+cap = cv2.VideoCapture(1)  # 1 denotes the index of the webcam
 
 while True:
     # Read the frame
