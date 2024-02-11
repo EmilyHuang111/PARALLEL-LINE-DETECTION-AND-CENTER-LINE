@@ -42,7 +42,7 @@ def draw_lines(frame, alpha=0.23):
         if not group:
             return None, None
         sum_start, sum_end = np.array([0, 0]), np.array([0, 0])
-        #After iterating througgh all lines, it calculates the average start and end points by dividing the sum arrays by the number of lines in the group. 
+        #After iterating through all lines, it calculates the average start and end points by dividing the sum arrays by the number of lines in the group. 
         for line in group:
             x1, y1, x2, y2 = line[0]
             cv2.line(frame, (x1, y1), (x2, y2), color, 6)
