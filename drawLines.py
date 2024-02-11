@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from detection import detect_lines #Import image processing libraries
 
-# Initialize exponential moving average (EMA) variables inorder to reduce noise and stabilize the centerline
+# Initialize exponential moving average (EMA) variables in order to reduce noise and stabilize the centerline
 ema_slope = None
 ema_intercept = None
 
