@@ -55,7 +55,7 @@ def draw_lines(frame, alpha=0.23):
     avg_start_group2, avg_end_group2 = draw_lines_and_calculate_average(group2, frame)
 
     # Calculate the average slope for each group
-    #  #https://stackoverflow.com/questions/41462419/python-slope-given-two-points-find-the-slope-answer-works-doesnt-work
+    #https://stackoverflow.com/questions/41462419/python-slope-given-two-points-find-the-slope-answer-works-doesnt-work
     def calculate_average_slope(group):
         slopes = []
         for line in group:
