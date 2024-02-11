@@ -38,6 +38,7 @@ def draw_lines(frame, alpha=0.23):
                 group2.append(line)
 
     # Calculate average points for each group and draw lines
+    #https://www.oreilly.com/library/view/python-for-data/9781449323592/ch04.html
     def draw_lines_and_calculate_average(group, frame, color=(0, 255, 0)):
         if not group:
             return None, None
