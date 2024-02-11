@@ -26,6 +26,7 @@ def draw_lines(frame, alpha=0.23):
     lines = detect_lines(frame)
 
     # Classify lines based on the x-coordinate of their midpoint
+    #If the midpoint is on the left half of the image, the line is appended to "group1", otherwise it's appended to "group2"
     # #https://www.geeksforgeeks.org/program-find-mid-point-line/
     if lines is not None:
         for line in lines:
@@ -41,6 +42,7 @@ def draw_lines(frame, alpha=0.23):
         if not group:
             return None, None
         sum_start, sum_end = np.array([0, 0]), np.array([0, 0])
+        #After iterating througgh all lines, it calculates the average start and end points by dividing the sum arrays by the number of lines in the group. 
         for line in group:
             x1, y1, x2, y2 = line[0]
             cv2.line(frame, (x1, y1), (x2, y2), color, 6)
