@@ -27,7 +27,8 @@ def draw_lines(frame, alpha=0.23):
 
     # Classify lines based on the x-coordinate of their midpoint
     #If the midpoint is on the left half of the image, the line is appended to "group1", otherwise it's appended to "group2"
-    # #https://www.geeksforgeeks.org/program-find-mid-point-line/
+    #https://www.geeksforgeeks.org/program-find-mid-point-line/
+    # https://github.com/adityagandhamal/road-lane-detection/blob/master/detection_on_vid.py Line 14-19
     if lines is not None:
         for line in lines:
             x1, y1, x2, y2 = line[0]
