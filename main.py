@@ -17,7 +17,7 @@ while True:
     frame_with_lines = draw_lines(frame)  # Assuming draw_lines() takes a frame and returns a frame with lines drawn on it
 
     # Display the frame with lines drawn
-    #https://stackoverflow.com/questions/41067007/trouble-with-cv2-imshow-function lines 25-27
+    #https://www.geeksforgeeks.org/python-play-a-video-using-opencv/ lines 20 - 23
     cv2.imshow('Webcam Line Detection with Mask', frame_with_lines)
 
     # Break the loop when 'q' is pressed
