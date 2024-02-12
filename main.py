@@ -3,7 +3,8 @@ import numpy as np
 from drawLines import draw_lines  # Import drawLines function
 
 # Start video capture from the webcam
-#https://docs.opencv.org/4.x/d8/dfe/classcv_1_1VideoCapture.html
+#https://docs.opencv.org/4.x/d8/dfe/classcv_1_1VideoCapture.html line 8
+# https://geeksforgeeks.org/python-play-a-video-using-opencv/ lines 16 - 21
 cap = cv2.VideoCapture(1)  # 1 denotes the index of the webcam
 
 while True:
@@ -16,7 +17,7 @@ while True:
     frame_with_lines = draw_lines(frame)  # Assuming draw_lines() takes a frame and returns a frame with lines drawn on it
 
     # Display the frame with lines drawn
-    #https://stackoverflow.com/questions/41067007/trouble-with-cv2-imshow-function
+    #https://stackoverflow.com/questions/41067007/trouble-with-cv2-imshow-function lines 25-27
     cv2.imshow('Webcam Line Detection with Mask', frame_with_lines)
 
     # Break the loop when 'q' is pressed
